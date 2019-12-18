@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Taylor Osborn</title>
+  
+  <link rel="icon" href="img/to-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slicknav.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+<div class="background">
+</div>
+
+<div class="foreground">
+  <div id="text">
+    <h1 id="t">Taylor Osborn</h1>
+    <h2 id="stack">Full Stack Developer</h2>
+    <h3 id="first">Solver of first world problems</h3>
+    <a class="btn" href="portfolio.html" style="color: darkblue" id="link">portfolio</a>
+    <a class="btn" href="about.html" style="color: forestgreen" id="link">about</a>
+  </div>
+  
+    
+  
+</div>
+
+  
+</body>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+
+  <!--Navbar-->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav();
+  });
+  </script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $("body").css("display", "none");
+   
+      $("body").fadeIn(2000);
+   
+      $("a#link").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(1000, redirectPage);      
+      });
+           
+      function redirectPage() {
+          window.location = linkLocation;
+      }
+  });
+  </script>
+ 
+ 
+
+</body>
+</html>

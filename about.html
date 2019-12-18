@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Taylor Osborn</title>
+  
+  <link rel="icon" href="img/to-favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/slicknav.min.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+  
+</head>
+
+
+<div class="page2">
+</div>
+
+  
+</body>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="js/jquery.slicknav.min.js"></script>
+
+  <!--Navbar-->
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#menu').slicknav();
+  });
+  </script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $("body").css("display", "none");
+   
+      $("body").fadeIn(2000);
+   
+      $("a#link").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(1000, redirectPage);      
+      });
+           
+      function redirectPage() {
+          window.location = linkLocation;
+      }
+  });
+  </script>
+ 
+ 
+
+</body>
+</html>
