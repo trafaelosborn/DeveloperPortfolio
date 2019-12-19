@@ -1,11 +1,24 @@
-body { display: none; }
-
-.row {
-  height: 100%;
+body { display: none; 
+overflow: hidden;
 }
+
 .left {
+  font-family: 'consolas';
+  color: green;
+}
+
+.right {
   background-color: black;
   font-family: 'consolas';
-
+  color: green;
 }
 
+.row {
+  height: 770px;
+}
+
+#tay {
+  height: 90%;
+  margin-top: 20px;
+  margin-left: 18%;
+}
